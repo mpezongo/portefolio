@@ -14,21 +14,21 @@ export const projects = [
     title: "Project SMSI",
     description:
       "Case study for obtaining ISO 27001 certification for the online ticket reservation service of Royal Air Maroc",
-    link: "localhost:3000",
+    link: "/files/Rapport_SMSI.pdf",
     img:img.smsi
   },
   {
     title: "WebSecPi",
     description:
       "This project involves creating a web interface to execute remote commands on a Raspberry Pi and use exploits via MSFConsole, with the goal of conducting remote penetration tests on specific targets.",
-    link: "localhost:3000",
+    link: "/files/rapport_websecpi.pdf",
     img:img.websecpi
   },
   {
     title: "IAAS Provider",
     description:
       "Our project is based on the fundamental principle of virtualization. We will offer users a virtual environment where they can create, configure, and deploy virtual machines online according to their specific needs.",
-    link: "localhost:3000",
+    link: "/files/rapport_cloud.pdf",
     img:img.projectcloud
   },
   {
@@ -39,10 +39,11 @@ export const projects = [
       img:img.ebook
   },
   {
-    title: "CheckMK",
+    title: "WAF F5",
     description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+      "Configured F5 BIG-IP WAF to secure web applications against vulnerabilities like SQL injection and XSS. Performed security testing and implemented protection policies in a virtualized environment.",
+    link: "/files/rapport_f5.pdf",
+    img:img.f5
   },
 ];
 

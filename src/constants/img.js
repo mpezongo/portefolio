@@ -32,6 +32,7 @@ import smsi from "../assets/img/smsi.PNG"
 import websecpi from "../assets/img/websecpi.png"
 import projectcloud from "../assets/img/cloud.PNG"
 import ebook from "../assets/img/ebook.PNG"
+import f5 from "../assets/img/F5-Networks.jpg"
 
 const img = {
     pm,
@@ -67,7 +68,8 @@ const img = {
     smsi,
     websecpi,
     projectcloud,
-    ebook
+    ebook,
+    f5
 }
 
 export default img

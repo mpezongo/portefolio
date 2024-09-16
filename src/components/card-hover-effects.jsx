@@ -1,6 +1,5 @@
 import { cn } from "../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 export const HoverEffect = ({
@@ -39,7 +38,7 @@ export const HoverEffect = ({
                 <CardTitle>{item.title}</CardTitle>
                 <CardDescription>{item.description}</CardDescription>
                 <div className="text-white w-36 h-12 border-1 border-primary rounded-2xl flex justify-center items-center hover:bg-primary duration-300">
-                    <NavLink to={item.link} >See more</NavLink>
+                    <a href={item.link} >See more</a>
                 </div>
           </Card>
         </div>

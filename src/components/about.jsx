@@ -18,7 +18,7 @@ export default function About() {
                 </div>
                 <div className='flex gap-4 tel:flex-wrap w-full justify-center items-center xl:justify-start justify-items-center'>
                     <div className='w-[150px] h-[100px] border-1 rounded-lg relative text-white flex flex-col p-2'>
-                        <span className='font-urbanist text-lg font-bold'>3240</span>
+                        <span className='font-urbanist text-lg font-bold'>---</span>
                         <hr className='w-10 h-[2px] bg-white rounded-full border-none' />
                         <div className='absolute right-2 z-10 bottom-4 w-8 flex justify-center items-center rounded-full h-8 bg-secondary'>
                             <img src={img.tryhackme} alt="TryHackme" className='w-5' />
@@ -38,7 +38,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className='w-[150px] h-[100px] border-1 rounded-lg relative text-white flex flex-col p-2'>
-                        <span className='font-urbanist text-lg font-bold'>3240</span>
+                        <span className='font-urbanist text-lg font-bold'>---</span>
                         <hr className='w-10 h-[2px] bg-white rounded-full border-none' />
                         <div className='absolute right-2 z-10 bottom-4 w-8 flex justify-center items-center rounded-full h-8 bg-secondary'>
                             <img src={img.bots} alt="Boss of the SOC" className='w-4' />
@@ -58,7 +58,7 @@ export default function About() {
                         </div>
                     </div>
                     <div className='w-[150px] h-[100px] border-1 rounded-lg relative text-white flex flex-col p-2'>
-                        <span className='font-urbanist text-lg font-bold'>3240</span>
+                        <span className='font-urbanist text-lg font-bold'>---</span>
                         <hr className='w-10 h-[2px] bg-white rounded-full border-none' />
                         <div className='absolute right-2 z-10 bottom-4 w-8 flex justify-center items-center rounded-full h-8 bg-secondary'>
                             <img src={img.rootme} alt="Root me" className='w-4'/>
@@ -80,9 +80,11 @@ export default function About() {
                 </div>
                 <span className="xl:absolute xl:flex hidden top-40 -right-10 h-16 w-16">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <span className="relative inline-flex justify-center items-center rounded-full h-16 w-16 text-xs bg-primary text-white font-urbanist gap-1 cursor-pointer">
-                        <icons.FaDownload /> Resume
-                    </span>
+                    <a href="/files/Resume Mickael PEZONGO.pdf">
+                        <span className="relative inline-flex justify-center items-center rounded-full h-16 w-16 text-xs bg-primary text-white font-urbanist gap-1 cursor-pointer">
+                            <icons.FaDownload /> Resume
+                        </span>
+                    </a>
                 </span>
             </div>
             <div className='relative tel:w-full xl:w-1/2 flex justify-center tel:px-1'>
