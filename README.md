@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+Je viens d'une école d'ingénieur avec une formation initiale de sécurité et technologie Informatique.
+J'ai le background nécessaire pour ce poste mais je reste tout de même un apprenant prêt à apprendre si besoin

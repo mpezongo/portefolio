@@ -12,7 +12,7 @@ export default function Services() {
                 What Can I do ?
             </div>
             <div className='w-full flex tel:flex-wrap px-2 gap-y-8 mt-4 gap-x-1 justify-between items-center'>
-                <div className=' relative xl:w-1/5 tel:w-[49%]  xl:p-5 tel:p-0 rounded-xl bg-secondary-20 flex flex-col justify-center items-center xl:gap-4 h-[250px] xl:pt-10'>
+                <div className=' relative xl:w-1/5 tel:w-[49%]  xl:p-5 tel:p-0 rounded-xl bg-secondary-20 flex flex-col justify-center items-center xl:gap-4 h-[300px] xl:pt-10'>
                     <div className='w-10 h-10 rounded-md bg-third rotate-45 absolute -top-5 drop-shadow-2xl border-1 border-secondary-20 text-white text-xl flex justify-center items-center'>
                         <icons.SiCyberdefenders className='-rotate-45' />
                     </div>
@@ -26,10 +26,10 @@ export default function Services() {
                         </div>
                     </div>
                     <div className='w-full text-center text-white font-jost text-sm'>
-                        Cybersecurity engineer ensuring data protection, threat prevention, and secure operations for businesses.
+                        Cybersecurity engineer ensuring data protection, threat prevention, and secure operations for businesses. Malware analysis, Vulnerability detection, Penetration testing, SOC setup and management, Audit (ISO)
                     </div>
                 </div>
-                <div className=' relative xl:w-1/5 tel:w-[49%] xl:p-5 tel:p-1 rounded-xl bg-secondary-20 flex flex-col justify-center items-center gap-4 h-[250px] pt-10' >
+                <div className=' relative xl:w-1/5 tel:w-[49%] xl:p-5 tel:p-1 rounded-xl bg-secondary-20 flex flex-col justify-center items-center gap-4 h-[300px] xl:pt-10' >
                     <div className='w-10 h-10 rounded-md bg-third rotate-45 absolute -top-5 drop-shadow-2xl border-1 border-secondary-20 text-white text-xl flex justify-center items-center'>
                         <icons.BsCodeSquare className='-rotate-45' />
                     </div>
@@ -46,7 +46,7 @@ export default function Services() {
                         Front-end developer crafting intuitive, responsive, and visually appealing user interfaces to enhance user experience and engagement.
                     </div>
                 </div>
-                <div className=' relative xl:w-1/5 xl:p-5 tel:w-[49%] rounded-xl bg-secondary-20 flex flex-col justify-center items-center gap-4 h-[250px] pt-10' >
+                <div className=' relative xl:w-1/5 xl:p-5 tel:w-[49%] rounded-xl bg-secondary-20 flex flex-col justify-center items-center gap-4 h-[300px] xl:pt-10' >
                     <div className='w-10 h-10 rounded-md bg-third rotate-45 absolute -top-5 drop-shadow-2xl border-1 border-secondary-20 text-white text-xl flex justify-center items-center'>
                         <icons.BsDatabaseFillGear className='-rotate-45' />
                     </div>
@@ -63,7 +63,7 @@ export default function Services() {
                     Back-end developer building robust, scalable server-side solutions and APIs to support seamless data management and application functionality.
                     </div>
                 </div>
-                <div className=' relative xl:w-1/5 tel:w-[49%] xl:p-5 rounded-xl bg-secondary-20 flex flex-col justify-center items-center gap-4 h-[250px] pt-10' >
+                <div className=' relative xl:w-1/5 tel:w-[49%] xl:p-5 rounded-xl bg-secondary-20 flex flex-col justify-center items-center gap-4 h-[300px] xl:pt-10' >
                     <div className='w-10 h-10 rounded-md bg-third rotate-45 absolute -top-5 drop-shadow-2xl border-1 border-secondary-20 text-white text-xl flex justify-center items-center'>
                         <div className='text-sm text-white flex flex-wrap w-full h-full -rotate-45 justify-center items-center '>
                             <icons.TbBrandDocker/>
