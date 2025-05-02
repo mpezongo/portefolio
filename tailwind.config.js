@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
+const { h1 } = require('framer-motion/client');
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -8,6 +9,25 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
+      typography: ({ theme }) => ({
+        light: {
+          css: {
+            color: theme('colors.gray.100'),
+            a: { color: theme('colors.blue.300') },
+            h1: { color: theme('colors.primary') },
+            h2: { color: theme('colors.primary') },
+            h3: { color: theme('colors.gray.100') },
+            strong: { color: theme('colors.gray.100') },
+            li: { color: theme('colors.gray.100') },
+            p: { color: theme('colors.gray.100') },
+            code: { color: theme('colors.green.300') },
+            blockquote: {
+              color: theme('colors.gray.300'),
+              borderLeftColor: theme('colors.gray.700'),
+            },
+          },
+        },
+      }),
       keyframes:{
         slidein:{
           from:{
@@ -116,7 +136,10 @@ module.exports = {
       },
     },
   },
-  plugins: [addVariablesForColors, require("tailwindcss-textshadow")],
+  plugins: [
+    require('@tailwindcss/typography'),
+    addVariablesForColors, require("tailwindcss-textshadow"),
+  ],
 };
 
 function addVariablesForColors({ addBase, theme }) {

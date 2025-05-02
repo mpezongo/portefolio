@@ -34,7 +34,7 @@ export const Timeline = ({
         </h2>
         <p
           className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been a student for the past 2 years. Here&apos;s
+          I&apos;ve been a student for the past 3 years. Here&apos;s
           a timeline of my journey.
         </p>
       </div>

@@ -4,6 +4,21 @@ import { Timeline } from "../components/timeline";
 export default function Experiences() {
   const data = [
     {
+      title: "2025",
+      content: (
+        <div className="flex flex-col gap-4">
+          <p
+            className="text-2xl md:text-4xl font-normal text-primary">
+             Intership at Michelin Group (Bourges, France)
+          </p>
+          <span className="text-white mb-8">Implementation of edge and cloud service bundle</span>
+          <div className="text-white/50">
+          Pendant mon stage de fin d'études chez Michelin Group, j’ai contribué activement à la gestion et à l'optimisation des règles de cybersécurité, notamment en analysant la PSSI (Politique de Sécurité des Systèmes d'Information) de l’entreprise. J’ai optimisé le suivi et la mise en œuvre des règles, tout en créant des plans de maintenance permettant de respecter les échéances critiques et d’assurer la bonne planification des travaux SI. J’ai également accompagné le site dans le renouvellement de son homologation auprès de l'ANSSI. Enfin, j’ai participé à l’optimisation du Plan de Reprise d'Activité (PRA), en proposant des améliorations concrètes pour renforcer la résilience de l’infrastructure face aux incidents critiques.
+          </div>
+        </div>
+      ),
+    },
+    {
       title: "2024",
       content: (
         <div className="flex flex-col gap-4">

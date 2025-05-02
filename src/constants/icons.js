@@ -1,5 +1,5 @@
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
-import { IoIosSearch } from "react-icons/io";
+import { IoIosSearch, IoIosArrowBack } from "react-icons/io";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoCodeSlash } from "react-icons/io5";
 import { TbWorld } from "react-icons/tb";
@@ -12,6 +12,10 @@ import { FaHandHolding, FaDownload } from "react-icons/fa";
 import { SiCyberdefenders } from "react-icons/si";
 import { AiOutlineSecurityScan, AiOutlineKubernetes  } from "react-icons/ai";
 import { HiOutlineServerStack } from "react-icons/hi2";
+import { CiCalendar, CiBookmark  } from "react-icons/ci";
+import { MdAccessTime } from "react-icons/md";
+import { LuShare2 } from "react-icons/lu";
+import { LiaEyeSolid } from "react-icons/lia";
 
 const icons = {
     FaFacebook,
@@ -35,7 +39,13 @@ const icons = {
     HiOutlineServerStack,
     IoLogoGithub,
     IoMdMail,
-    FaDownload
+    FaDownload,
+    IoIosArrowBack,
+    CiCalendar,
+    MdAccessTime,
+    LuShare2,
+    CiBookmark,
+    LiaEyeSolid
 }
 
 export default icons

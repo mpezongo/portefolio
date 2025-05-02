@@ -33,6 +33,7 @@ import websecpi from "../assets/img/websecpi.png"
 import projectcloud from "../assets/img/cloud.PNG"
 import ebook from "../assets/img/ebook.PNG"
 import f5 from "../assets/img/F5-Networks.jpg"
+import vulnerability_analysis from "../assets/img/Capture.PNG"
 
 const img = {
     pm,
@@ -69,7 +70,8 @@ const img = {
     websecpi,
     projectcloud,
     ebook,
-    f5
+    f5,
+    vulnerability_analysis
 }
 
 export default img

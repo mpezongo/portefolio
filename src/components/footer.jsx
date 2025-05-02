@@ -36,8 +36,8 @@ export default function Footer() {
                 <div className='w-1/4 flex flex-col justify-start items-start h-48 xl:h-72 text-white'>
                     <span className='text-xl xl:text-2xl font-urbanist'>Link</span>
                     <div className='flex justify-start items-start flex-col mt-10 font-urbanist gap-2 text-xs xl:text-md'>
-                        <a href='/'>Components</a>
-                        <a href='/files/Resume Mickael PEZONGO.pdf'>Resume</a>
+                        <a href='/blog'>Blog</a>
+                        <a href='/files/Mickael PEZONGO.pdf'>Resume</a>
                     </div>
                 </div>
             </div>

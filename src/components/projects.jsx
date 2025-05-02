@@ -4,6 +4,13 @@ import img from '../constants/img';
 
 export const projects = [
   {
+    title: "Vulnerability Analysis",
+    description:
+      "A vulnerability analysis project in cybersecurity using AI, specifically GPT, to detect, document, and provide actionable recommendations to enhance system security.",
+    link: "/files/Rapport vulnerability analysis.pdf",
+    img:img.vulnerability_analysis
+  },
+  {
     title: "Lithyus Music",
     description:
       "A technology company that builds economic infrastructure for the internet.",
@@ -30,13 +37,6 @@ export const projects = [
       "Our project is based on the fundamental principle of virtualization. We will offer users a virtual environment where they can create, configure, and deploy virtual machines online according to their specific needs.",
     link: "/files/rapport_cloud.pdf",
     img:img.projectcloud
-  },
-  {
-    title: "Ebbok Website",
-    description:
-      "Online bookstore for enthusiasts of novels, biographies, textbooks, and children's books.",
-      link: "localhost:3000",
-      img:img.ebook
   },
   {
     title: "WAF F5",

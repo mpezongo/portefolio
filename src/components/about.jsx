@@ -14,8 +14,7 @@ export default function About() {
                     I'm a <span className='text-primary font-bold'>Cybersecurity</span> Student at INSA CVL and Software Developer
                 </div>
                 <div className='text-white font-urbanist xl:text-xs tel:text-[8px] tel:text-justify xl:text-start max-w-[400px]'>
-                    I am a 4th-year student in <span className='text-primary'>cybersecurity engineering</span>, passionate about protecting information systems. My skills include security auditing, penetration testing, and network security. <span className='text-primary'>Additionally, I am a software, mobile, and web application developer</span>. I am currently working towards completing my cybersecurity engineering degree.
-                </div>
+                    I'm a <span className='text-primary'>cybersecurity student</span> specializing in offensive and defensive security, currently completing my final-year internship at <span className='text-primary'>Michelin Group</span>. I also <span>develop software</span> with a strong focus on security. My goal: combine pentesting and development to build safer and more efficient systems.                </div>
                 <div className='flex gap-4 tel:flex-wrap w-full justify-center items-center xl:justify-start justify-items-center'>
                     <div className='w-[150px] h-[100px] border-1 rounded-lg relative text-white flex flex-col p-2'>
                         <span className='font-urbanist text-lg font-bold'>---</span>
@@ -80,7 +79,7 @@ export default function About() {
                 </div>
                 <span className="xl:absolute xl:flex hidden top-40 -right-10 h-16 w-16">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                    <a href="/files/Resume Mickael PEZONGO.pdf">
+                    <a href="/files/Mickael PEZONGO.pdf">
                         <span className="relative inline-flex justify-center items-center rounded-full h-16 w-16 text-xs bg-primary text-white font-urbanist gap-1 cursor-pointer">
                             <icons.FaDownload /> Resume
                         </span>
