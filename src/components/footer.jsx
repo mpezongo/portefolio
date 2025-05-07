@@ -13,7 +13,7 @@ export default function Footer() {
                         MPEZONGO
                     </div>
                     <div className='text-[8px] xl:text-sm text-white font-urbanist text-justify w-4/5'>
-                    I am a 4th-year student in <span className='text-primary'>cybersecurity engineering</span>, passionate about protecting information systems. My skills include security auditing, penetration testing, and network security. <span className='text-primary'>Additionally, I am a software, mobile, and web application developer</span>. I am currently working towards completing my cybersecurity engineering degree.
+                    I am a 5th-year student in <span className='text-primary'>cybersecurity engineering</span>, passionate about protecting information systems. My skills include security auditing, penetration testing, and network security. <span className='text-primary'>Additionally, I am a software, mobile, and web application developer</span>. I am currently working towards completing my cybersecurity engineering degree.
                     </div>
                     <div className='flex items-center gap-2 text-white font-jost text-[8px] xl:text-lg'>
                         <div className='w-8 h-8 xl:w-12 xl:h-12 rounded-full bg-white text-primary text-xl xl:text-3xl flex justify-center items-center'>

@@ -1,4 +1,4 @@
-import pm from '../assets/img/pezongmickael2.png'
+import pm from '../assets/img/moi.png'
 import logo from '../logo.svg'
 import nodejs from '../assets/img/1174925.webp'
 import django from '../assets/img/png-transparent-django-web-development-web-framework-python-software-framework-django-text-trademark-logo.png'

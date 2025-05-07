@@ -1,8 +1,49 @@
 import React from 'react'
+import { useEffect, useState } from "react";
 import img from '../constants/img'
 import icons from '../constants/icons'
+import { createClient } from '@supabase/supabase-js';
+
+const supabase = createClient(
+  "https://pnnrxnhjwbmukrujawov.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBubnJ4bmhqd2JtdWtydWphd292Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYxMDc0NzYsImV4cCI6MjA2MTY4MzQ3Nn0.oPpduvPQAopXd3J2mFbeqwa4O8WFqV4gPNZgn6G0nUA"
+);
 
 export default function About() {
+
+    const [count, setCount] = useState(0);
+    const [targetCount, setTargetCount] = useState(0);
+
+    useEffect(() => {
+
+        const fetchPost = async () => {
+            const { data, error } = await supabase
+                .from('views')
+                .select('*')
+
+            if (error) {
+                console.error("Erreur lors de la récupération de l'article :", error);
+            } else {
+                setTargetCount(data.length);
+            }
+        };
+
+        let current = 0;
+        const step = Math.ceil(targetCount / 50); // Control animation speed
+        const interval = setInterval(() => {
+            current += step;
+            if (current >= targetCount) {
+            current = targetCount;
+            clearInterval(interval);
+            }
+            setCount(current);
+        }, 30);
+    
+        fetchPost();
+        return () => clearInterval(interval);
+    }, [targetCount]);
+
+
   return (
     <div className='w-full pt-36 flex flex-col justify-center items-center px-2' id='about'>
         <div className='w-full xl:max-w-[1200px] flex tel:flex-col-reverse xl:flex-row justify-start items-start relative'>
@@ -56,26 +97,12 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className='w-[150px] h-[100px] border-1 rounded-lg relative text-white flex flex-col p-2'>
-                        <span className='font-urbanist text-lg font-bold'>---</span>
-                        <hr className='w-10 h-[2px] bg-white rounded-full border-none' />
-                        <div className='absolute right-2 z-10 bottom-4 w-8 flex justify-center items-center rounded-full h-8 bg-secondary'>
-                            <img src={img.rootme} alt="Root me" className='w-4'/>
-                        </div>
-                        <span className='font-urbanist text-[10px] w-16 mt-4 text-primary font-bold'>Code Lab</span>
+                    <div className='w-[150px] h-[100px] border-1 rounded-lg relative text-white flex flex-col p-2 justify-center items-center'>
+                        <span className='font-urbanist text-4xl text-primary font-bold'>{count}</span>
+                        <span className='font-bold font-urbanist'>Visitors</span>
 
-                        <div className='absolute right-[54px] -top-2'>
-                            <div className='w-0 h-0 border-t-[51px] border-t-transparent border-b-[51px] border-b-transparent border-r-[35px] relative border-r-white
-                                before:content-[""] before:absolute before:w-0 before:h-0 before:border-t-[50px] before:border-t-transparent before:border-b-[50px] before:border-b-transparent before:border-r-[33px]
-                                before:border-r-secondary-20
-                                before:-top-[49.5px] before:left-[2px]
-                            '> 
-                            </div>
-                            <div className='h-[100px] w-[55px] border-r-1 border-t-1 border-b-1  absolute top-[1px] left-[34px] bg-secondary-20 rounded-r-lg'>
-
-                            </div>
-                        </div>
                     </div>
+                    
                 </div>
                 <span className="xl:absolute xl:flex hidden top-40 -right-10 h-16 w-16">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
@@ -113,7 +140,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className='absolute top-0 flex justify-center items-center'>
-                    <img src={img.pm} alt="PEZONGO Mickael" className='top-10 relative' />
+                    <img src={img.pm} alt="PEZONGO Mickael" className='top-10 relative w-[75%]' />
                     <div className="absolute xl:-bottom-10 tel:-bottom-10 left-0 w-full h-10 bg-gradient-to-t from-third to-transparent"></div>
                 </div>
             </div>

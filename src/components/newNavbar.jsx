@@ -36,16 +36,16 @@ export default function NewNavbar({page}) {
                     MPEZONGO
                 </div>
                 <div className='w-full flex bg-secondary h-10 border-[1px] rounded-full border-white justify-between p-1 gap-2 mt-5'>
-                <a href='#skill' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (hash === "#skill" ? "bg-primary" : "")}>
+                <a href='/#skill' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (hash === "#skill" ? "bg-primary" : "")}>
                     Skills
                 </a>
-                <a href='#project' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (hash === "#project" ? "bg-primary" : "")}>
+                <a href='/#project' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (hash === "#project" ? "bg-primary" : "")}>
                     Projects
                 </a>
-                <a href='#certificate' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (hash === "#certificate" ? "bg-primary" : "")}>
+                <a href='/#certificate' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (hash === "#certificate" ? "bg-primary" : "")}>
                     Certificates
                 </a>
-                <a href='#experience' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (hash === "#experience" ? "bg-primary" : "")}>
+                <a href='/#experience' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (hash === "#experience" ? "bg-primary" : "")}>
                     Experiences
                 </a>
                 <a href='/blog' className={"w-1/6 font-urbanise text-white text-[10px] h-11/12 rounded-full flex justify-center items-center " + (page === "blog" ? "bg-primary" : "")}>
